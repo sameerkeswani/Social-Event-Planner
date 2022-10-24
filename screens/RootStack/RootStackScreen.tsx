@@ -33,7 +33,7 @@ export function RootStackScreen() {
   const options = { headerShown: false };
   return (
     <NavigationContainer>
-      <RootStack.Navigator mode="modal" initialRouteName="Main">
+      <RootStack.Navigator screenOptions={{ presentation: "modal" }} initialRouteName="Main">
         <RootStack.Screen
           name="Main"
           component={MainStackScreen}
